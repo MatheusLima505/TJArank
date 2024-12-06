@@ -8,7 +8,7 @@ function App() {
   useEffect(() => {
     const fetchData = async () => {
       const { data: tableData, error } = await supabase
-        .from('rank')
+        .from('pontuacao')
         .select('*');
 
       if (error) {
