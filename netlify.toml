@@ -1,0 +1,6 @@
+[build]
+command = "npm run build" # Comando para construir o site
+publish = "dist" # Pasta onde os arquivos finais do site estão
+
+[dev]
+framework = "static" # Isso desativa o live reload automático
