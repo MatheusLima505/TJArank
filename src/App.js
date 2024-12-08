@@ -23,13 +23,13 @@ function App() {
 
     // Configuração do Realtime
     const channel = supabase
-      .channel('realtime:rank') // Nome personalizado do canal
+      .channel('realtime:pontuacao') // Nome personalizado do canal
       .on(
         'postgres_changes',
         {
           event: '*', // Escutando todos os eventos
           schema: 'public', // Esquema correto
-          table: 'rank', // Tabela que você quer monitorar
+          table: 'pontuacao', // Tabela que você quer monitorar
         },
         (payload) => {
           console.log('Mudança recebida:', payload);
