@@ -56,6 +56,7 @@
   background: linear-gradient(to bottom, #ff9500, #df7534);
   color: black;
   text-transform: uppercase;
+  font-family: 'MinhaFonte', sans-serif;
 }
 .video-background {
   position: fixed; /* Fixa o vídeo em relação à janela */
@@ -70,3 +71,12 @@
   background-color: rgba(212, 106, 106, 0.86);
   cursor: pointer;
 }
+
+@font-face {
+    font-family: 'MinhaFonte';
+    src: url('./assets/fonts/fonte.woff2') format('woff2'),
+         url('./assets/fonts/fonte.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
